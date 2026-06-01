@@ -1,9 +1,10 @@
-# Example Mod
+# Minecraft Is Infinite
 
-## Setup
+The concept is simple, make Minecraft infinite. How? Simple. Completely remove the worldborder code.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+## TODO
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+- [X] ~~Remove rendering logic from client.~~
+- [ ] Remove server logic for movement canceling.
+- [ ] Remove logic for damage beond world border.
+- [ ] Make sure that all world-border related commands have a notification that they have no effect with this mod

@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "minecraftisinfinite",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Minecraft Is Infinite",
+	"description": "Makes Minecraft almost infinite.",
 	"authors": [
-		"Me!"
+		"GameLord2011"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/GameLord2011/MinecraftIsInfinite",
+		"sources": "https://github.com/GameLord2011/MinecraftIsInfinite"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"dev.gamelord2011.MinecraftIsInfinite"
 		],
 		"client": [
-			"com.example.client.ExampleModClient"
+			"dev.gamelord2011.client.MinecraftIsInfinite"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"minecraftisinfinite.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "minecraftisinfinite.client.mixins.json",
 			"environment": "client"
 		}
 	],
