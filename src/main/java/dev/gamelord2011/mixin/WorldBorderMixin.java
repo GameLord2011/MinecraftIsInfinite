@@ -46,4 +46,12 @@ public class WorldBorderMixin {
     public boolean isInsideCloseToBorder(boolean original) {
         return false;
     }
+
+    @ModifyReturnValue(
+        method = "getDistanceToBorder(DD)D",
+        at = @At("RETURN")
+    )
+    public double getDistanceToBorder(double original) {
+        return Double.POSITIVE_INFINITY;
+    }
 }

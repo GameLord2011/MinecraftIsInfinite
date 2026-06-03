@@ -3,6 +3,8 @@
 	"package": "dev.gamelord2011.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
+		"EntityMixin",
+		"PlayerMixin",
 		"WorldBorderMixin"
 	],
 	"injectors": {

@@ -11,6 +11,6 @@ public class MinecraftIsInfinite implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Initalizing MinecraftIsInfinite.");
+		LOGGER.info("MinecraftIsInfinite Initalized.");
 	}
 }
