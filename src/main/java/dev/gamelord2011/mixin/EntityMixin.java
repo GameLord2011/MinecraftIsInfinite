@@ -1,9 +1,7 @@
 package dev.gamelord2011.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.Overwrite;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -16,11 +14,8 @@ public abstract class EntityMixin extends Entity {
         super(type, level);
     }
 
-    @Inject(
-        method = "absSnapTo(DDD)V",
-        at = @At("HEAD")
-    )
-    public void absSnapTo(final double x, final double y, final double z, CallbackInfo ci) {
+    @Overwrite
+    public void absSnapTo(final double x, final double y, final double z) {
         this.setPos(x, y, z);
     }
 }

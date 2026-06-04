@@ -4,10 +4,18 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
+import net.minecraft.world.entity.Avatar;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
 
 @Mixin(Player.class)
-public class PlayerMixin {
+public abstract class PlayerMixin extends Avatar {
+    protected PlayerMixin(EntityType<? extends LivingEntity> type, Level level) {
+        super(type, level);
+    }
+
     @ModifyVariable(
         method = "tick",
         at = @At("STORE"),
@@ -23,7 +31,7 @@ public class PlayerMixin {
         ordinal = 0
     )
     double nx(double nx) {
-        return nx;
+        return this.getX();
     }
 
     @ModifyVariable(
@@ -32,6 +40,6 @@ public class PlayerMixin {
         ordinal = 1
     )
     double nz(double nz) {
-        return nz;
+        return this.getZ();
     }
 }
