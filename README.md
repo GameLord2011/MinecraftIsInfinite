@@ -5,6 +5,6 @@ The concept is simple, make Minecraft infinite. How? Simple. Completely remove t
 ## TODO
 
 - [X] ~~Remove rendering logic from client.~~
-- [ ] Remove server logic for movement canceling.
-- [ ] Remove logic for damage beond world border.
-- [ ] Make sure that all world-border related commands have a notification that they have no effect with this mod
+- [X] ~~Remove server logic for movement canceling.~~
+- [X] ~~Remove logic for damage beond world border.~~
+- [] ~~Make sure that all world-border related commands have a notification that they have no effect with this mod~~ I don't know enough of any other language for this :P
