@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "minecraftisinfinite",
 	"version": "${version}",
-	"name": "Minecraft Is Infinite",
+	"name": "Mc Is Infinite",
 	"description": "Makes Minecraft almost infinite.",
 	"authors": [
 		"GameLord2011"
